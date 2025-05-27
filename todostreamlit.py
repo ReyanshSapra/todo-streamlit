@@ -1,12 +1,10 @@
 import streamlit as st
 from datetime import datetime
 
-st.set_page_config(page_icon="📝")
-
 if 'tasks' not in st.session_state:
     st.session_state.tasks = []
 
-st.set_page_config(layout="centered", page_title="To-Do List")
+st.set_page_config(layout="centered", page_title="To-Do List", page_icon="📝")
 
 st.title("📝 To-Do List")
 st.markdown("Add tasks, mark them complete, or delete them!")
