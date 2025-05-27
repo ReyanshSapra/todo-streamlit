@@ -1,6 +1,8 @@
 import streamlit as st
 from datetime import datetime
 
+st.set_page_config(page_icon="📝")
+
 if 'tasks' not in st.session_state:
     st.session_state.tasks = []
 
